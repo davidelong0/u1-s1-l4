@@ -1,12 +1,12 @@
 package Esercizio1;
 
 public class DipendenteFullTime extends Dipendente {
-    public DipendenteFullTime(String matricola, double stipendioBase, Dipartimento dipartimento) {
-        super(matricola, stipendioBase, dipartimento);
+    public DipendenteFullTime(String nome, int eta, String cv, String matricola, double stipendio, Dipartimento dipartimento) {
+        super(nome, eta, cv, matricola, stipendio, dipartimento);
     }
 
     @Override
     public double calculateSalary() {
-        return getStipendioBase(); // stipendio fisso mensile
+        return getStipendio();
     }
 }

@@ -4,8 +4,8 @@ public class DipendentePartTime extends Dipendente {
     private int oreLavorate;
     private double pagaOraria;
 
-    public DipendentePartTime(String matricola, Dipartimento dipartimento, int oreLavorate, double pagaOraria) {
-        super(matricola, 0, dipartimento); // stipendio base = 0, non serve
+    public DipendentePartTime(String nome, int eta, String cv, String matricola, Dipartimento dipartimento, int oreLavorate, double pagaOraria) {
+        super(nome, eta, cv, matricola, 0, dipartimento);
         this.oreLavorate = oreLavorate;
         this.pagaOraria = pagaOraria;
     }
